@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Calculadora de Preço de Carga</title>
+	</head>
+	<body>
+		<form action="calcValor.jsp" method="get">
+		<h1>Calculadora de Preço de Carga</h1><br>
+		
+		<h2>Quilômetros rodados com/sem pavimento: </h2><br>
+			Quilômetros com pavimento: <input type="number" step="0.001" name="kmPav"><br>
+			Quilômetros sem pavimento: <input type="number" step="0.001" name="kmSPav"><br><br/>
+								
+		<h2>Veículo utilizado: </h2><br>
+			<input type="radio" name="veiculo" value="camBau" checked> Caminhão baú<br>
+			<input type="radio" name="veiculo" value="camCac"> Caminhão caçamba<br>
+			<input type="radio" name="veiculo" value="carreta"> Carreta<br>
+			
+		<h2>Carga transportada: </h2>
+			<input type="number" step="0.001" name="ton"><br><br>	
+			<input type="submit" value="Calcular">
+		</form>
+	</body>
+</html>
